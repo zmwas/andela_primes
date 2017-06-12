@@ -13,3 +13,7 @@ class PrimeNumbersTestCase(unittest.TestCase):
     def test_output_is_prime(self):
         result =generate_prime_numbers(10)
         self.assertEqual(result,[2,3,5,7],msg="output is not prime")
+
+    def test_output_not_empty(self):
+        result = generate_prime_numbers(10)
+        self.assertTrue(result!=None)
