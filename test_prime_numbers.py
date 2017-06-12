@@ -17,3 +17,7 @@ class PrimeNumbersTestCase(unittest.TestCase):
     def test_output_not_empty(self):
         result = generate_prime_numbers(10)
         self.assertTrue(result!=None)
+    def test_output_positive(self):
+        result = generate_prime_numbers(10)
+        for i in result:
+            self.assertTrue(i>0)
