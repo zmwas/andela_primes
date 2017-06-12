@@ -10,4 +10,6 @@ class PrimeNumbersTestCase(unittest.TestCase):
         result = generate_prime_numbers(10)
         self.assertTrue(type(result) == list,msg="output is not a list")
 
-    
+    def test_output_is_prime(self):
+        result =generate_prime_numbers(10)
+        self.assertEqual(result,[2,3,5,7],msg="output is not prime")
